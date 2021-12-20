@@ -1,0 +1,21 @@
+@import-normalize;
+@tailwind base;
+@tailwind components;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@layer components {
+  .test-class {
+    @apply
+    bg-blue-500;
+  }
+
+}
+
+
