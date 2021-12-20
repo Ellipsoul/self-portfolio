@@ -11,11 +11,8 @@
 }
 
 @layer components {
-  .test-class {
-    @apply
-    bg-blue-500;
+  .main-container {
+    @apply w-full my-0 mx-auto;
+    @apply flex flex-col;
   }
-
 }
-
-
