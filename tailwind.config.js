@@ -13,7 +13,8 @@ module.exports = {
       padding: '2rem',
     },
     fontFamily: {
-      'sans': ['Open Sans', 'ui-sans-serif', 'system-ui'],
+      'sans': ['Graphik', 'sans-serif'],
+      'serif': ['Merriweather', 'serif'],
     }
   },
   variants: {},

@@ -1,0 +1,9 @@
+@import-normalize;
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .projects-container {
+    @apply flex flex-row items-center justify-center grow border border-emerald-700;
+  }
+}
