@@ -4,10 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ThemeService {
-  // Create a service that tracks the theme and can be used by other components.
-  // The theme is stored in local storage.
-  // The theme is set to 'light' by default.
-  // The theme can be changed by calling the setTheme() method.
   constructor() {
   }
 

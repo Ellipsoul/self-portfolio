@@ -16,12 +16,9 @@ interface Project {
   styleUrls: ['./main-content.component.css'],
 })
 export class MainContentComponent implements OnInit {
-  theme: string;
   projects: Project[];
 
   constructor(private themeService: ThemeService) {
-    this.theme = this.themeService.getTheme();
-
     this.projects = [
       {
         name: 'Project 1',
@@ -70,5 +67,9 @@ export class MainContentComponent implements OnInit {
 
   ngOnInit(): void {
 
+  }
+
+  applyTheme() {
+    return this.themeService.getTheme();
   }
 }

@@ -1,5 +1,5 @@
 <!-- Setting class to dark like this changes the whole schema -->
-<div [ngClass]='["projects-container", theme]'>
+<div [ngClass]='["projects-container", applyTheme()]'>
   <ng-container *ngFor="let project of projects">
     <mat-card>
       <mat-card-header>
@@ -7,7 +7,7 @@
         <mat-card-subtitle>{{ project.description }}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        <img [src]="project.image_link">
+        <img [src]="project.image_link" width="400">
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button color="primary">LIKE</button>
