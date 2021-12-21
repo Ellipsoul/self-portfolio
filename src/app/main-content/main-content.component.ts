@@ -32,6 +32,34 @@ export class MainContentComponent implements OnInit {
         demo_url: 'https://random-url.com',
         image_link: '../../assets/images/project2.png',
       },
+      {
+        name: 'Project 3',
+        description: 'A project description',
+        github_url: 'https://random-url.com',
+        demo_url: 'https://random-url.com',
+        image_link: '../../assets/images/project3.png',
+      },
+      {
+        name: 'Project 4',
+        description: 'A project description',
+        github_url: 'https://random-url.com',
+        demo_url: 'https://random-url.com',
+        image_link: '../../assets/images/project4.png',
+      },
+      {
+        name: 'Project 5',
+        description: 'A project description',
+        github_url: 'https://random-url.com',
+        demo_url: 'https://random-url.com',
+        image_link: '../../assets/images/project5.png',
+      },
+      {
+        name: 'Project 6',
+        description: 'A project description',
+        github_url: 'https://random-url.com',
+        demo_url: 'https://random-url.com',
+        image_link: '../../assets/images/project6.png',
+      },
     ];
   };
 

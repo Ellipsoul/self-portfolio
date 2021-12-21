@@ -1,5 +1,17 @@
 <div ngClass="projects-container">
   <ng-container *ngFor="let project of projects">
-    {{project.name}}
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ project.name }}</mat-card-title>
+        <mat-card-subtitle>{{ project.description }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ project.image_link}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">LIKE</button>
+        <button mat-raised-button color="accent">SHARE</button>
+      </mat-card-actions>
+    </mat-card>
   </ng-container>
 </div>

@@ -4,8 +4,7 @@
 
 @layer components {
   mat-toolbar {
-    @apply bg-blue-800;
+    @apply border border-emerald-500;
     @apply flex h-28 shadow-lg items-center justify-between;
   }
-
 }
