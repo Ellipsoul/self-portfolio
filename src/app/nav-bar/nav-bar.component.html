@@ -1,4 +1,6 @@
-<mat-toolbar>
-  Top Nav Bar goes here!
+<mat-toolbar ngClass="toolbar" [color]="theme === 'light' ? 'primary' : 'accent'">
+  <button mat-raised-button color="primary" (click)="toggleTheme()">
+    Toggle Theme
+  </button>
 </mat-toolbar>
 

@@ -1,12 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ThemeService } from '../theme.service';
+
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
-  constructor() { }
+  theme: string;
+
+  constructor(private themeService: ThemeService) {
+    this.theme = this.themeService.getTheme();
+  }
 
   ngOnInit(): void {}
+
+  toggleTheme(): void {
+    this.themeService.toggleTheme();
+    this.theme = this.themeService.getTheme();
+  }
 }

@@ -1,10 +1,12 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
 @import-normalize;
 @tailwind base;
 @tailwind components;
 
 @layer components {
-  mat-toolbar {
-    @apply border border-emerald-500;
-    @apply flex h-28 shadow-lg items-center justify-between;
+  .toolbar {
+    @apply bg-white dark:bg-black;
+    @apply flex h-28 shadow-lg items-center justify-between place-items-center;
   }
 }
