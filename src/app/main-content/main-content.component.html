@@ -1,3 +1,5 @@
 <div ngClass="projects-container">
-  main-content works!
+  <ng-container *ngFor="let project of projects">
+    {{project.name}}
+  </ng-container>
 </div>

@@ -1,11 +1,12 @@
-const colors = require('tailwindcss/colors')
+// const colors = require('tailwindcss/colors');
 
 module.exports = {
   mode: 'jit',
+  important: true, // Might be necessary to overwrite material design defaults
   purge: {
     enabled: true,
     // enabled: process.env.TAILWIND_MODE === 'build',
-    content: ['./src/**/*.{html,ts}']
+    content: ['./src/**/*.{html,ts}'],
   },
   darkMode: 'class',
   theme: {
@@ -15,14 +16,13 @@ module.exports = {
     fontFamily: {
       'sans': ['Graphik', 'sans-serif'],
       'serif': ['Merriweather', 'serif'],
-    }
+    },
   },
   variants: {},
   plugins: [],
 };
 
 // module.exports = {
-//   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 //   mode: 'jit',
 //   darkMode: 'class', // false, 'media' or 'class'
 //   theme: {
