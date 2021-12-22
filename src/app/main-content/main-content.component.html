@@ -1,5 +1,4 @@
-<!-- Setting class to dark like this changes the whole schema -->
-<div [ngClass]='["projects-container", applyTheme()]'>
+<div [ngClass]="['projects-container', applyTheme()]">
   <ng-container *ngFor="let project of projects">
     <mat-card>
       <mat-card-header>

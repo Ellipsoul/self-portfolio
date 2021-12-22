@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
 
+import { ThemeService } from './theme.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'self-portfolio';
+  title = 'Aron Teh Portfolio';
 
-  mode: string = 'dark';
+  constructor(private themeService: ThemeService) { }
+
+  applyTheme() {
+    return this.themeService.getTheme();
+  }
 }
