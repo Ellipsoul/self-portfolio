@@ -8,11 +8,7 @@ import { ThemeService } from '../theme.service';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
-  theme: string;
-
-  constructor(private themeService: ThemeService) {
-    this.theme = this.themeService.getTheme();
-  }
+  constructor(private themeService: ThemeService) {}
 
   ngOnInit(): void {}
 
@@ -22,6 +18,5 @@ export class NavBarComponent implements OnInit {
 
   toggleTheme():void {
     this.themeService.toggleTheme();
-    this.theme = this.themeService.getTheme();
   }
 }

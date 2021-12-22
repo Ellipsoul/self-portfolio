@@ -12,46 +12,53 @@ export interface Project {
 // Hard coded project information
 export const PROJECTS:Project[] = [
   {
-    name: 'Project 1',
-    description: 'A project description',
-    github_url: 'https://random-url.com',
-    demo_url: 'https://random-url.com',
-    image_link: '../../assets/img.jpg',
+    name: 'Online Chat App',
+    description: 'A single-room chat app built with React',
+    github_url: 'https://github.com/Ellipsoul/online-chat-app',
+    demo_url: 'https://ellipsoul.github.io/online-chat-app/',
+    image_link: '../../assets/project_images/chatapp.png',
   },
   {
-    name: 'Project 2',
-    description: 'A project description. What happens if its long?',
-    github_url: 'https://random-url.com',
-    demo_url: 'https://random-url.com',
-    image_link: '../../assets/img.jpg',
+    name: 'Quiz App',
+    description: 'A quiz built with Flutter and Firebase',
+    github_url: 'https://github.com/Ellipsoul/flutter-quizapp',
+    demo_url: 'https://quizapp.aronteh.com/',
+    image_link: '../../assets/project_images/quizapp.png',
   },
   {
-    name: 'Project 3',
-    description: 'A project description. What happens if its long?',
-    github_url: 'https://random-url.com',
-    demo_url: 'https://random-url.com',
-    image_link: '../../assets/img.jpg',
+    name: 'Travelling Salesman Problem Visualiser',
+    description: 'Exactly what it sounds like. My first ever coding project',
+    github_url: 'https://github.com/Ellipsoul/Travelling-Salesman-Visualiser',
+    demo_url: 'https://ellipsoul.github.io/Travelling-Salesman-Visualiser/',
+    image_link: '../../assets/project_images/tsv.png',
   },
   {
-    name: 'Project 4',
-    description: 'A project description. What happens if its long?',
-    github_url: 'https://random-url.com',
-    demo_url: 'https://random-url.com',
-    image_link: '../../assets/img.jpg',
+    name: 'Tax Calculator',
+    description: 'I wanted to compare taxes in 3 countries',
+    github_url: 'https://github.com/Ellipsoul/tax-calculator-pwa',
+    demo_url: 'https://tax-calculator-pwa.vercel.app/',
+    image_link: '../../assets/project_images/tax.png',
   },
   {
-    name: 'Project 5',
-    description: 'A project description. What happens if its long?',
-    github_url: 'https://random-url.com',
-    demo_url: 'https://random-url.com',
-    image_link: '../../assets/img.jpg',
+    name: 'LinkTree-like Socials',
+    description: 'Built for my good friend Sebii, an amazing music artist',
+    github_url: 'https://github.com/Ellipsoul/sebii-portfolio',
+    demo_url: 'https://sebii-portfolio.vercel.app/',
+    image_link: '../../assets/project_images/sebii.png',
   },
   {
-    name: 'Project 6',
-    description: 'A project description. What happens if its long?',
-    github_url: 'https://random-url.com',
-    demo_url: 'https://random-url.com',
-    image_link: '../../assets/img.jpg',
+    name: 'ADMM Solver',
+    description: 'Built for my Masters thesis at Imperial College London',
+    github_url: 'https://github.com/Ellipsoul/ADMM_Solver',
+    demo_url: 'https://github.com/Ellipsoul/ADMM_Solver/blob/main/Parallel_ADMM_Aron_Teh.pdf',
+    image_link: '../../assets/project_images/admm.png',
+  },
+  {
+    name: 'Blogging App (Deprecated)',
+    description: 'Dev.to inspired online blogging site',
+    github_url: 'https://github.com/Ellipsoul/nxtfirejs',
+    demo_url: 'https://nxtfirejs.vercel.app/',
+    image_link: '../../assets/project_images/nextfire.png',
   },
 ];
 
@@ -72,8 +79,8 @@ export class ThemeService {
   getTheme(): string {
     const theme = localStorage.getItem('theme');
     if (theme === null) {
-      this.setTheme('light');
-      return 'light';
+      this.setTheme('dark');
+      return 'dark';
     } else {
       return theme;
     }

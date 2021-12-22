@@ -1,15 +1,52 @@
 <!-- Top-bar represented by material toolbar  -->
 <div [ngClass]="[applyTheme(), 'topbar-container', 'dark:bg-gray-900']">
   <!-- Don't ask me why this has to be in-line -->
-  <button
-    mat-raised-button
-    (mousedown)="toggleTheme()"
-    [color]="applyTheme() === 'light' ? 'primary' : 'accent'"
-  >
-    Toggle Theme
-  </button>
 
-  <div>
-    {{ theme }}
+  <div ngClass="profile-picture">
+    <img
+      src="./../../assets/profile.png"
+      alt="Profile Picture"
+      width="80"
+      matTooltip="Let's pretend I haven't taken a picture since :)"
+      matTooltipPosition="below"
+    />
   </div>
+  <div ngClass="name">Aron Teh</div>
+
+  <div ngClass="divider"></div>
+
+  <a href="https://github.com/ellipsoul" target="_blank">
+    <button mat-fab color="grayscale" ngClass="link-buttons">
+      <img
+        [src]="
+          applyTheme() === 'light'
+            ? '../../assets/github_dark.png'
+            : '../../assets/github_light.png'
+        "
+        ngClass="github-button"
+      />
+    </button>
+  </a>
+
+  <a href="https://www.linkedin.com/in/aronteh/" target="_blank">
+    <button mat-fab color="grayscale" ngClass="link-buttons">
+      <img
+        [src]="
+          applyTheme() === 'dark'
+            ? '../../assets/linkedin_normal.png'
+            : '../../assets/linkedin_white.png'
+        "
+        ngClass="linkedin-button"
+      />
+    </button>
+  </a>
+
+  <div ngClass="divider-2"></div>
+  <div ngClass="divider-2"></div>
+
+  <button mat-fab color="grayscale" (mousedown)="toggleTheme()">
+    <mat-icon color="grayscale">{{
+      applyTheme() === 'light' ? 'light_mode' : 'dark_mode'
+    }}</mat-icon>
+  </button>
 </div>

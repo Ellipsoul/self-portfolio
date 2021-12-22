@@ -8,7 +8,7 @@ import { ThemeService } from './theme.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Aron Teh Portfolio';
+  title = 'Aron Teh - Portfolio';
 
   constructor(private themeService: ThemeService) { }
 

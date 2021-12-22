@@ -5,7 +5,53 @@
 @layer components {
   .topbar-container {
     @apply bg-amber-50;
-    @apply flex h-28 shadow-lg items-center justify-evenly;
+    @apply flex flex-row h-28 shadow-lg items-center justify-between;
     @apply drop-shadow-lg;
+    @apply px-12;
+  }
+
+  .profile-picture {
+    @apply grow-0;
+    @apply mr-6;
+    @apply shadow-xl rounded-full;
+  }
+
+  .name {
+    @apply text-black dark:text-white;
+    @apply font-bold font-serif text-6xl;
+    @apply ml-4 mr-10 grow-0;
+  }
+
+  .link-buttons {
+    @apply mx-3 grow-0;
+  }
+
+  /* Styling and positioning for buttons */
+  .github-button {
+    @apply h-10 w-10;
+    @apply mx-auto absolute top-2 left-2;
+  }
+
+  .linkedin-button {
+    @apply h-8 w-8;
+    @apply mx-auto absolute top-3 left-3;
+  }
+
+  /* Custom colours for buttons */
+  .mat-fab.mat-grayscale {
+    @apply bg-gray-800 dark:bg-white;
+  }
+  .mat-icon.mat-grayscale {
+    @apply text-white dark:text-black;
+  }
+
+  /* Small divider */
+  .divider {
+    @apply grow;
+  }
+
+  /* Large divider */
+  .divider-2 {
+    @apply grow-8;
   }
 }

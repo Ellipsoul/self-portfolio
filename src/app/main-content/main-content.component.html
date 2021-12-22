@@ -9,31 +9,35 @@
       </mat-card-header>
       <!-- Image in main content -->
       <mat-card-content>
-        <img [src]="project.image_link" ngClass="project-image" width="300" />
+        <img [src]="project.image_link" ngClass="project-image" width="350" />
       </mat-card-content>
       <!-- GitHub code and demo link -->
       <mat-card-actions>
-        <button mat-fab color="grayscale">
-          <img
-            [src]="
-              applyTheme() === 'light'
-                ? '../../assets/github_dark.png'
-                : '../../assets/github_light.png'
-            "
-            ngClass="link-button-logo"
-          />
-        </button>
+        <a [href]="project.github_url" target="_blank">
+          <button mat-fab color="grayscale">
+            <img
+              [src]="
+                applyTheme() === 'light'
+                  ? '../../assets/github_dark.png'
+                  : '../../assets/github_light.png'
+              "
+              ngClass="link-button-logo"
+            />
+          </button>
+        </a>
 
-        <button mat-fab color="grayscale">
-          <img
-            [src]="
-              applyTheme() === 'dark'
-                ? '../../assets/demo-logo-dark.png'
-                : '../../assets/demo-logo-light.png'
-            "
-            ngClass="link-button-logo"
-          />
-        </button>
+        <a [href]="project.demo_url" target="_blank">
+          <button mat-fab color="grayscale">
+            <img
+              [src]="
+                applyTheme() === 'dark'
+                  ? '../../assets/demo-logo-dark.png'
+                  : '../../assets/demo-logo-light.png'
+              "
+              ngClass="link-button-logo"
+            />
+          </button>
+        </a>
       </mat-card-actions>
     </mat-card>
   </ng-container>
