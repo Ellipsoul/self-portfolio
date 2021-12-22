@@ -23,4 +23,13 @@
   mat-card {
     @apply bg-blue-100 dark:bg-gray-500;
   }
+
+  mat-card-actions {
+    @apply flex flex-row items-center justify-evenly;
+    @apply pb-4 !important;
+  }
+
+  button {
+    @apply px-4 py-2;
+  }
 }

@@ -8,9 +8,9 @@
       <mat-card-content>
         <img [src]="project.image_link" width="400">
       </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="primary">LIKE</button>
-        <button mat-raised-button color="accent">SHARE</button>
+      <mat-card-actions [ngClass]="'padding-stuff'">
+        <button mat-raised-button color="basic">Demo</button>
+        <button mat-raised-button color="basic">GitHub</button>
       </mat-card-actions>
     </mat-card>
   </ng-container>
