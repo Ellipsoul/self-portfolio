@@ -3,11 +3,7 @@
 module.exports = {
   mode: 'jit',
   important: true, // Might be necessary to overwrite material design defaults
-  purge: {
-    enabled: true,
-    // enabled: process.env.TAILWIND_MODE === 'build',
-    content: ['./src/**/*.{html,ts}'],
-  },
+  content: ['./src/**/*.{html,ts}'],
   darkMode: 'class',
   theme: {
     container: {
