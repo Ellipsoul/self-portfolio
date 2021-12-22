@@ -16,6 +16,7 @@ module.exports = {
     extend: {
       scale: {
         101: '1.01',
+        115: '1.15',
       },
       transitionDuration: {
         50: '50ms',
