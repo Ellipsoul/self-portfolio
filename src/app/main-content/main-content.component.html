@@ -5,12 +5,33 @@
         <mat-card-title>{{ project.name }}</mat-card-title>
         <mat-card-subtitle>{{ project.description }}</mat-card-subtitle>
       </mat-card-header>
+
       <mat-card-content>
-        <img [src]="project.image_link" width="400">
+        <img [src]="project.image_link" ngClass="project-image" width="400" />
       </mat-card-content>
-      <mat-card-actions [ngClass]="'padding-stuff'">
-        <button mat-raised-button color="basic">Demo</button>
-        <button mat-raised-button color="basic">GitHub</button>
+
+      <mat-card-actions>
+        <button mat-fab [color]="applyTheme() === 'dark' ? 'basic' : 'primary'">
+          <img
+            [src]="
+              applyTheme() === 'light'
+                ? '../../assets/github_dark.png'
+                : '../../assets/github_light.png'
+            "
+            ngClass="link-button-logo"
+          />
+        </button>
+
+        <button mat-fab [color]="applyTheme() === 'dark' ? 'basic' : 'primary'">
+          <img
+            [src]="
+              applyTheme() === 'dark'
+                ? '../../assets/demo-logo-dark.png'
+                : '../../assets/demo-logo-light.png'
+            "
+            ngClass="link-button-logo"
+          />
+        </button>
       </mat-card-actions>
     </mat-card>
   </ng-container>

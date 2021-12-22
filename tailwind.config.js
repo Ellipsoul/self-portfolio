@@ -14,8 +14,16 @@ module.exports = {
       padding: '2rem',
     },
     fontFamily: {
-      'sans': ['Graphik', 'sans-serif'],
-      'serif': ['Merriweather', 'serif'],
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
+    extend: {
+      scale: {
+        101: '1.01',
+      },
+      transitionDuration: {
+        50: '50ms',
+      },
     },
   },
   variants: {},

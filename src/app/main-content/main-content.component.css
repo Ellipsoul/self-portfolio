@@ -16,12 +16,13 @@
     @apply mt-12 mb-12 ml-3 mr-3 drop-shadow-lg;
   }
 
-  img {
+  .project-image {
     @apply border rounded-xl shadow-md;
   }
 
   mat-card {
     @apply bg-blue-100 dark:bg-gray-500;
+    @apply transition ease-out duration-50 hover:ease-in hover:scale-101;
   }
 
   mat-card-actions {
@@ -29,7 +30,8 @@
     @apply pb-4 !important;
   }
 
-  button {
-    @apply px-4 py-2;
+  .link-button-logo {
+    @apply h-10 w-10;
+    @apply mx-auto absolute top-2 left-2;
   }
 }
