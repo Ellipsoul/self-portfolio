@@ -1,9 +1,13 @@
-<mat-toolbar ngClass="toolbar" [color]="theme === 'dark' ? 'primary' : 'accent'">
-  <button mat-raised-button color="primary" (click)="toggleTheme()">
+<!-- Top-bar represented by material toolbar  -->
+<mat-toolbar
+  ngClass="toolbar"
+  [color]="theme === 'dark' ? 'primary' : 'accent'"
+>
+  <button mat-raised-button color="primary" (mousedown)="toggleTheme()">
     Toggle Theme
   </button>
+
   <div>
     {{ theme }}
   </div>
 </mat-toolbar>
-

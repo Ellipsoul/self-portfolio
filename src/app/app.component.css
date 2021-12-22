@@ -12,6 +12,7 @@
   padding: 0;
 }
 
+/* Full width and automatic height main container */
 @layer components {
   .main-container {
     @apply w-full my-0 mx-auto;
