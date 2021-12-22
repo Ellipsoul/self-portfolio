@@ -13,7 +13,7 @@ export interface Project {
 export const PROJECTS:Project[] = [
   {
     name: 'Project 1',
-    description: 'A project description. What happens if its long?',
+    description: 'A project description',
     github_url: 'https://random-url.com',
     demo_url: 'https://random-url.com',
     image_link: '../../assets/img.jpg',

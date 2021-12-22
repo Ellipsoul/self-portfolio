@@ -16,7 +16,11 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  toggleTheme(): void {
+  applyTheme() {
+    return this.themeService.getTheme();
+  }
+
+  toggleTheme():void {
     this.themeService.toggleTheme();
     this.theme = this.themeService.getTheme();
   }
