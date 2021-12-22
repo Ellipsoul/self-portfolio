@@ -6,5 +6,6 @@
   .topbar-container {
     @apply bg-green-300;
     @apply flex h-28 shadow-lg items-center justify-evenly;
+    @apply drop-shadow-lg;
   }
 }
