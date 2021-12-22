@@ -20,8 +20,19 @@
 
   /* All projects displayed in a material card */
   mat-card {
-    @apply bg-blue-100 dark:bg-gray-500;
-    @apply transition ease-out duration-50 hover:ease-in hover:scale-101;
+    @apply bg-gray-100 dark:bg-gray-500;
+    @apply hover:ease-out hover:scale-101;
+    @apply flex flex-col items-stretch;
+  }
+
+  /* Dynamic project title colouring */
+  mat-card-title {
+    @apply text-black dark:text-white;
+  }
+
+  /* Dynamic project description colouring */
+  mat-card-subtitle {
+    @apply text-black dark:text-white;
   }
 
   /* Image representing the project */
@@ -29,6 +40,7 @@
     @apply border border-gray-400 dark:border-gray-200;
     @apply rounded-xl shadow-md;
     @apply drop-shadow-md;
+    @apply mx-5;
   }
 
   /* Contains buttons to link to GitHub code and demo */
