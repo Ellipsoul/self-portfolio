@@ -13,7 +13,10 @@
       </mat-card-content>
       <!-- GitHub code and demo link -->
       <mat-card-actions>
-        <button mat-fab [color]="applyTheme() === 'dark' ? 'basic' : 'primary'">
+        <button
+          mat-fab
+          [color]="applyTheme() === 'dark' ? 'accent' : 'primary'"
+        >
           <img
             [src]="
               applyTheme() === 'light'
@@ -24,7 +27,10 @@
           />
         </button>
 
-        <button mat-fab [color]="applyTheme() === 'dark' ? 'basic' : 'primary'">
+        <button
+          mat-fab
+          [color]="applyTheme() === 'dark' ? 'accent' : 'primary'"
+        >
           <img
             [src]="
               applyTheme() === 'dark'
