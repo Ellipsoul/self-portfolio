@@ -25,7 +25,7 @@ module.exports = {
         '5xl': '3rem',
         '6xl': '3.5rem',
         '7xl': '4rem',
-        dynamicname: 'calc(2rem + 1vw)',
+        dynamicname: 'calc(1.5rem + 1.5vw)',
       },
       flexGrow: {
         2: 2,

@@ -16,7 +16,7 @@
     @apply shadow-xl rounded-full;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .profile-picture {
       @apply hidden;
     }
@@ -31,12 +31,12 @@
       @apply hidden;
     }
 
-    .name {
-      @apply hidden;
-    }
-
     .link-buttons {
       @apply mx-0;
+    }
+
+    .topbar-container {
+      @apply px-0 justify-around;
     }
   }
 
@@ -46,19 +46,29 @@
     @apply ml-4 mr-10 grow-0;
   }
 
+  @media screen and (max-width: 500px) {
+    .name {
+      @apply hidden;
+    }
+  }
+
   .link-buttons {
     @apply mx-3 grow-0;
   }
 
   /* Styling and positioning for buttons */
-  .github-button {
+  .github-icon {
     @apply h-10 w-10;
     @apply mx-auto absolute top-2 left-2;
   }
 
-  .linkedin-button {
+  .linkedin-icon {
     @apply h-8 w-8;
     @apply mx-auto absolute top-3 left-3;
+  }
+
+  .resume-icon {
+    @apply transform scale-150;
   }
 
   /* Custom colours for buttons */
