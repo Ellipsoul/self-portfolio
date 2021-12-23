@@ -40,7 +40,7 @@ export const PROJECTS:Project[] = [
     image_link: '../../assets/project_images/tax.png',
   },
   {
-    name: 'LinkTree-like Socials',
+    name: 'Better LinkTree Socials Site',
     description: 'Built for my good friend Sebii, an amazing music artist',
     github_url: 'https://github.com/Ellipsoul/sebii-portfolio',
     demo_url: 'https://sebii-portfolio.vercel.app/',

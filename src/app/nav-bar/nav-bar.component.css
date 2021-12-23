@@ -12,13 +12,37 @@
 
   .profile-picture {
     @apply grow-0;
-    @apply mr-6;
+    @apply mr-6 w-16;
     @apply shadow-xl rounded-full;
+  }
+
+  @media screen and (max-width: 600px) {
+    .profile-picture {
+      @apply hidden;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .divider {
+      @apply hidden;
+    }
+
+    .divider-2 {
+      @apply hidden;
+    }
+
+    .name {
+      @apply hidden;
+    }
+
+    .link-buttons {
+      @apply mx-0;
+    }
   }
 
   .name {
     @apply text-black dark:text-white;
-    @apply font-bold font-serif text-6xl;
+    @apply font-bold font-serif text-dynamicname;
     @apply ml-4 mr-10 grow-0;
   }
 

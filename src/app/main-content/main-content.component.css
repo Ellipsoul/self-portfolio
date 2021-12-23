@@ -42,6 +42,12 @@
     @apply mx-5;
   }
 
+  @media screen and (max-width: 425px) {
+    .project-image {
+      @apply mx-0;
+    }
+  }
+
   /* Contains buttons to link to GitHub code and demo */
   mat-card-actions {
     @apply flex flex-row items-center justify-evenly;
