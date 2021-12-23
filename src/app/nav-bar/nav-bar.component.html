@@ -4,7 +4,7 @@
   <!-- Profile and name -->
   <div ngClass="profile-picture">
     <img
-      src="./../../assets/profile.png"
+      src="/assets/profile.png"
       alt="Profile Picture"
       matTooltip="Let's pretend I haven't taken a picture since :)"
       matTooltipPosition="below"
@@ -20,8 +20,8 @@
       <img
         [src]="
           applyTheme() === 'light'
-            ? '../../assets/github_dark.png'
-            : '../../assets/github_light.png'
+            ? '/assets/github_dark.png'
+            : '/assets/github_light.png'
         "
         ngClass="github-icon"
       />
@@ -33,18 +33,15 @@
       <img
         [src]="
           applyTheme() === 'dark'
-            ? '../../assets/linkedin_normal.png'
-            : '../../assets/linkedin_white.png'
+            ? '/assets/linkedin_normal.png'
+            : '/assets/linkedin_white.png'
         "
         ngClass="linkedin-icon"
       />
     </button>
   </a>
 
-  <a
-    href="https://www.dropbox.com/s/c9e8slyz1jt48yy/Aron_Teh_Resume.pdf?dl=0"
-    target="_blank"
-  >
+  <a href="/assets/Aron_Teh_Resume.pdf" target="_blank">
     <button mat-fab color="grayscale" ngClass="link-buttons">
       <mat-icon color="grayscale" ngClass="resume-icon">description</mat-icon>
     </button>
