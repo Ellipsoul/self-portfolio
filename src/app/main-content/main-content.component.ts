@@ -14,9 +14,7 @@ export class MainContentComponent implements OnInit {
     this.projects = PROJECTS;
   };
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   applyTheme() {
     return this.themeService.getTheme();

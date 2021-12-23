@@ -10,7 +10,7 @@ import { ThemeService } from './theme.service';
 export class AppComponent {
   title = 'Aron Teh - Portfolio';
 
-  constructor(private themeService: ThemeService) { }
+  constructor(private themeService: ThemeService) {}
 
   applyTheme() {
     return this.themeService.getTheme();
