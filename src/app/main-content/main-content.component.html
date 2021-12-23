@@ -14,10 +14,10 @@
       <!-- GitHub code and demo link -->
       <mat-card-actions>
         <a [href]="project.github_url" target="_blank">
-          <button mat-fab color="grayscale">
+          <button mat-icon-button>
             <img
               [src]="
-                applyTheme() === 'light'
+                applyTheme() === 'dark'
                   ? '../../assets/github_dark.png'
                   : '../../assets/github_light.png'
               "
@@ -27,10 +27,10 @@
         </a>
 
         <a [href]="project.demo_url" target="_blank">
-          <button mat-fab color="grayscale">
+          <button mat-icon-button>
             <img
               [src]="
-                applyTheme() === 'dark'
+                applyTheme() === 'light'
                   ? '../../assets/demo-logo-dark.png'
                   : '../../assets/demo-logo-light.png'
               "

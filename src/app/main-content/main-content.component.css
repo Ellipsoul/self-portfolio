@@ -56,13 +56,8 @@
 
   /* Styling and positioning for buttons */
   .link-button-logo {
-    @apply h-10 w-10;
-    @apply mx-auto absolute top-2 left-2;
-    @apply hover:ease-out hover:scale-115;
-  }
-
-  /* Custom colours for buttons */
-  .mat-fab.mat-grayscale {
-    @apply bg-gray-800 dark:bg-white;
+    @apply w-10 h-auto;
+    @apply mx-auto;
+    @apply hover:scale-125;
   }
 }
