@@ -3,6 +3,7 @@
 @tailwind components;
 
 @layer components {
+  /* Wrapping container for navigation bar */
   .topbar-container {
     @apply bg-amber-50;
     @apply flex flex-row h-28 shadow-lg items-center justify-between;
@@ -10,53 +11,37 @@
     @apply px-12;
   }
 
+  /* Picture, hidden for anything smaller than an iPad */
   .profile-picture {
     @apply grow-0;
     @apply mr-6 w-16;
     @apply shadow-xl rounded-full;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 700px) {
     .profile-picture {
       @apply hidden;
     }
   }
 
-  @media screen and (max-width: 425px) {
-    .divider {
-      @apply hidden;
-    }
-
-    .divider-2 {
-      @apply hidden;
-    }
-
-    .link-buttons {
-      @apply mx-0;
-    }
-
-    .topbar-container {
-      @apply px-0 justify-around;
-    }
-  }
-
+  /* Name, hidden for phones */
   .name {
     @apply text-black dark:text-white;
     @apply font-bold font-serif text-dynamicname;
-    @apply ml-4 mr-10 grow-0;
+    @apply ml-4 mr-10 grow-0 whitespace-nowrap;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 580px) {
     .name {
       @apply hidden;
     }
   }
 
+  /* Styling and positioning for buttons */
   .link-buttons {
     @apply mx-3 grow-0;
   }
 
-  /* Styling and positioning for buttons */
   .github-icon {
     @apply h-10 w-10;
     @apply mx-auto absolute top-2 left-2;
@@ -87,5 +72,24 @@
   /* Large divider */
   .divider-2 {
     @apply grow-8;
+  }
+
+  /* Hiding dividers and removing spacings for small devices */
+  @media screen and (max-width: 425px) {
+    .divider {
+      @apply hidden;
+    }
+
+    .divider-2 {
+      @apply hidden;
+    }
+
+    .link-buttons {
+      @apply mx-0;
+    }
+
+    .topbar-container {
+      @apply px-0 justify-around;
+    }
   }
 }

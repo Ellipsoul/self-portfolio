@@ -1,7 +1,7 @@
 <!-- Top-bar represented by material toolbar  -->
+<!-- Don't ask me why this has to be in-line. Doesn't work otherwise... -->
 <div [ngClass]="[applyTheme(), 'topbar-container', 'dark:bg-gray-900']">
-  <!-- Don't ask me why this has to be in-line -->
-
+  <!-- Profile and name -->
   <div ngClass="profile-picture">
     <img
       src="./../../assets/profile.png"
@@ -14,6 +14,7 @@
 
   <div ngClass="divider"></div>
 
+  <!-- Links for GitHub, LinkedIn and Resume -->
   <a href="https://github.com/ellipsoul" target="_blank">
     <button mat-fab color="grayscale" ngClass="link-buttons">
       <img
@@ -52,6 +53,7 @@
   <div ngClass="divider-2"></div>
   <div ngClass="divider-2"></div>
 
+  <!-- Theme toggler -->
   <button mat-fab color="grayscale" (mousedown)="toggleTheme()">
     <mat-icon color="grayscale">{{
       applyTheme() === 'light' ? 'light_mode' : 'dark_mode'
