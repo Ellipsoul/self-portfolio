@@ -60,6 +60,13 @@ export const PROJECTS:Project[] = [
     demo_url: 'https://nxtfirejs.vercel.app/',
     image_link: '/assets/project_images/nextfire.png',
   },
+  {
+    name: 'Vorticity Streamfunction Visualiser',
+    description: 'The 2D Navier Stokes Equations in action',
+    github_url: 'https://github.com/Ellipsoul/vorticity_stream_function',
+    demo_url: 'https://github.com/Ellipsoul/vorticity_stream_function/blob/master/ewt17_HPC_Assignment_Report.pdf',
+    image_link: '/assets/project_images/vorticity.jpg',
+  },
 ];
 
 // Service provides theming functionality
