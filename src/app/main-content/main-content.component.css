@@ -18,7 +18,7 @@
 
   /* All projects displayed in a material card */
   mat-card {
-    @apply bg-gray-100 dark:bg-gray-500;
+    @apply bg-amber-50 dark:bg-gray-500;
     @apply hover:ease-out hover:scale-101;
     @apply flex flex-col items-stretch;
     @apply drop-shadow-xl;
