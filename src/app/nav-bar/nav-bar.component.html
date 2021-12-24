@@ -15,7 +15,12 @@
   <div ngClass="divider"></div>
 
   <!-- Links for GitHub, LinkedIn and Resume -->
-  <a href="https://github.com/ellipsoul" target="_blank">
+  <a
+    href="https://github.com/ellipsoul"
+    target="_blank"
+    matTooltip="GitHub Profile"
+    matTooltipPosition="below"
+  >
     <button mat-fab color="grayscale" ngClass="link-buttons">
       <img
         [src]="
@@ -28,7 +33,12 @@
     </button>
   </a>
 
-  <a href="https://www.linkedin.com/in/aronteh/" target="_blank">
+  <a
+    href="https://www.linkedin.com/in/aronteh/"
+    target="_blank"
+    matTooltip="LinkedIn Profile"
+    matTooltipPosition="below"
+  >
     <button mat-fab color="grayscale" ngClass="link-buttons">
       <img
         [src]="
@@ -41,7 +51,12 @@
     </button>
   </a>
 
-  <a href="/assets/Aron_Teh_Resume.pdf" target="_blank">
+  <a
+    href="/assets/Aron_Teh_Resume.pdf"
+    target="_blank"
+    matTooltip="Resume"
+    matTooltipPosition="below"
+  >
     <button mat-fab color="grayscale" ngClass="link-buttons">
       <mat-icon color="grayscale" ngClass="resume-icon">description</mat-icon>
     </button>
@@ -51,7 +66,13 @@
   <div ngClass="divider-2"></div>
 
   <!-- Theme toggler -->
-  <button mat-fab color="grayscale" (mousedown)="toggleTheme()">
+  <button
+    mat-fab
+    color="grayscale"
+    (mousedown)="toggleTheme()"
+    matTooltip="Toggle Theme"
+    matTooltipPosition="below"
+  >
     <mat-icon color="grayscale">{{
       applyTheme() === 'light' ? 'light_mode' : 'dark_mode'
     }}</mat-icon>

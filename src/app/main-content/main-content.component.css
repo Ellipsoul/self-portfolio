@@ -60,4 +60,14 @@
     @apply mx-auto;
     @apply hover:scale-125;
   }
+
+  /* Flexible layout with vertically centered items inside */
+  .icon-links {
+    @apply flex flex-col items-center;
+  }
+
+  /* Extra sizing for demo icon */
+  .demo-icon {
+    @apply transform scale-120;
+  }
 }

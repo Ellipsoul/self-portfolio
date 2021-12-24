@@ -13,7 +13,13 @@
       </mat-card-content>
       <!-- GitHub code and demo link -->
       <mat-card-actions>
-        <a [href]="project.github_url" target="_blank">
+        <a
+          [href]="project.github_url"
+          target="_blank"
+          ngClass="icon-links"
+          matTooltip="Project GitHub"
+          matTooltipPosition="below"
+        >
           <button mat-icon-button>
             <img
               [src]="
@@ -26,8 +32,13 @@
           </button>
         </a>
 
-        <a [href]="project.demo_url" target="_blank">
-          <button mat-icon-button>
+        <button
+          mat-icon-button
+          ngClass="demo-icon"
+          matTooltip="Project Demo"
+          matTooltipPosition="below"
+        >
+          <a [href]="project.demo_url" target="_blank" ngClass="icon-links">
             <img
               [src]="
                 applyTheme() === 'light'
@@ -36,8 +47,8 @@
               "
               ngClass="link-button-logo"
             />
-          </button>
-        </a>
+          </a>
+        </button>
       </mat-card-actions>
     </mat-card>
   </ng-container>
