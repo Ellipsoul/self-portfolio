@@ -36,7 +36,7 @@ export const PROJECTS:Project[] = [
     name: 'Tax Calculator',
     description: 'I wanted to compare taxes in 3 countries',
     github_url: 'https://github.com/Ellipsoul/tax-calculator-pwa',
-    demo_url: 'https://tax-calculator-pwa.vercel.app/',
+    demo_url: 'https://taxcalculator.aronteh.com/',
     image_link: '/assets/project_images/tax.png',
   },
   {
