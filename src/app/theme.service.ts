@@ -12,6 +12,13 @@ export interface Project {
 // Hard coded project information
 export const PROJECTS:Project[] = [
   {
+    name: 'NanoNote',
+    description: 'A responsive and lightweight sticky notes application',
+    github_url: 'https://github.com/Ellipsoul/notetaking-app',
+    demo_url: 'https://nanonote.aronteh.com/',
+    image_link: '../assets/project_images/nanonote.png',
+  },
+  {
     name: 'Online Chat App',
     description: 'A single-room chat app built with React',
     github_url: 'https://github.com/Ellipsoul/online-chat-app',
