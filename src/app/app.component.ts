@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 import { ThemeService } from './theme.service';
 
@@ -10,7 +11,9 @@ import { ThemeService } from './theme.service';
 export class AppComponent {
   title = 'Aron Teh - Portfolio';
 
-  constructor(private themeService: ThemeService) {}
+  constructor(private themeService: ThemeService, private meta: Meta) {
+    this.meta.addTag({ name: 'description', content: 'Portfolio website for Aron Teh' });
+  }
 
   applyTheme() {
     return this.themeService.getTheme();
