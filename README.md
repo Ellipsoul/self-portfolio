@@ -2,7 +2,7 @@
 
 Deployed at: [https://aronteh.com/](https://aronteh.com/)
 
-A selection of my favourite personal projects I have completed since I started my coding journey back in June 2020
+A collection of my personal projects I have completed since I started my coding journey back in June 2020
 
 Links to my GitHub, LinkedIn and resume are available in the top bar
 

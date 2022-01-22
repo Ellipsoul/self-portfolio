@@ -19,18 +19,18 @@ export const PROJECTS:Project[] = [
     image_link: '../assets/project_images/nanonote.png',
   },
   {
+    name: 'TurboFile',
+    description: 'A convenient file-sharing application',
+    github_url: 'https://github.com/Ellipsoul/file-sharing-app',
+    demo_url: 'https://turbofile.aronteh.com/',
+    image_link: '../assets/project_images/turbofile.png',
+  },
+  {
     name: 'Online Chat App',
     description: 'A single-room chat app built with React',
     github_url: 'https://github.com/Ellipsoul/online-chat-app',
     demo_url: 'https://ellipsoul.github.io/online-chat-app/',
     image_link: '/assets/project_images/chatapp.png',
-  },
-  {
-    name: 'Quiz App',
-    description: 'A quiz built with Flutter and Firebase',
-    github_url: 'https://github.com/Ellipsoul/flutter-quizapp',
-    demo_url: 'https://quizapp.aronteh.com/',
-    image_link: '/assets/project_images/quizapp.png',
   },
   {
     name: 'Travelling Salesman Problem Visualiser',
@@ -40,11 +40,11 @@ export const PROJECTS:Project[] = [
     image_link: '/assets/project_images/tsv.png',
   },
   {
-    name: 'Tax Calculator',
-    description: 'I wanted to compare taxes in 3 countries',
-    github_url: 'https://github.com/Ellipsoul/tax-calculator-pwa',
-    demo_url: 'https://taxcalculator.aronteh.com/',
-    image_link: '/assets/project_images/tax.png',
+    name: 'Quiz App',
+    description: 'A quiz built with Flutter and Firebase',
+    github_url: 'https://github.com/Ellipsoul/flutter-quizapp',
+    demo_url: 'https://quizapp.aronteh.com/',
+    image_link: '/assets/project_images/quizapp.png',
   },
   {
     name: 'Better LinkTree Socials Site',
@@ -52,6 +52,13 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/sebii-portfolio',
     demo_url: 'https://sebii-portfolio.vercel.app/',
     image_link: '/assets/project_images/sebii.png',
+  },
+  {
+    name: 'Tax Calculator',
+    description: 'I wanted to compare taxes in 3 countries',
+    github_url: 'https://github.com/Ellipsoul/tax-calculator-pwa',
+    demo_url: 'https://taxcalculator.aronteh.com/',
+    image_link: '/assets/project_images/tax.png',
   },
   {
     name: 'ADMM Solver',
