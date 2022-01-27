@@ -20,14 +20,14 @@ export const PROJECTS:Project[] = [
   },
   {
     name: 'TurboFile',
-    description: 'A convenient file-sharing application',
+    description: 'A fast and easy-to-use file sharing application',
     github_url: 'https://github.com/Ellipsoul/file-sharing-app',
     demo_url: 'https://turbofile.aronteh.com/',
     image_link: '../assets/project_images/turbofile.png',
   },
   {
     name: 'Online Chat App',
-    description: 'A single-room chat app built with React',
+    description: 'A simple single-room chat application',
     github_url: 'https://github.com/Ellipsoul/online-chat-app',
     demo_url: 'https://ellipsoul.github.io/online-chat-app/',
     image_link: '/assets/project_images/chatapp.png',
@@ -41,13 +41,13 @@ export const PROJECTS:Project[] = [
   },
   {
     name: 'Quiz App',
-    description: 'A quiz built with Flutter and Firebase',
+    description: 'A responsive cross-platform quiz application',
     github_url: 'https://github.com/Ellipsoul/flutter-quizapp',
     demo_url: 'https://quizapp.aronteh.com/',
     image_link: '/assets/project_images/quizapp.png',
   },
   {
-    name: 'Better LinkTree Socials Site',
+    name: 'Social Links Portfolio Site',
     description: 'Built for my good friend Sebii, an amazing music artist',
     github_url: 'https://github.com/Ellipsoul/sebii-portfolio',
     demo_url: 'https://sebii-portfolio.vercel.app/',
@@ -55,7 +55,7 @@ export const PROJECTS:Project[] = [
   },
   {
     name: 'Tax Calculator',
-    description: 'I wanted to compare taxes in 3 countries',
+    description: 'I wanted to compare taxes, and learn some Angular',
     github_url: 'https://github.com/Ellipsoul/tax-calculator-pwa',
     demo_url: 'https://taxcalculator.aronteh.com/',
     image_link: '/assets/project_images/tax.png',
@@ -68,7 +68,7 @@ export const PROJECTS:Project[] = [
     image_link: '/assets/project_images/admm.png',
   },
   {
-    name: 'Blogging App (Deprecated)',
+    name: 'Social Blogging App (Deprecated)',
     description: 'Dev.to inspired online blogging site',
     github_url: 'https://github.com/Ellipsoul/nxtfirejs',
     demo_url: 'https://nxtfirejs.vercel.app/',
