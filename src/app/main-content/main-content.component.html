@@ -9,7 +9,9 @@
       </mat-card-header>
       <!-- Image in main content -->
       <mat-card-content>
-        <img [src]="project.image_link" ngClass="project-image" width="350" />
+        <a [href]="project.demo_url" target="_blank">
+          <img [src]="project.image_link" ngClass="project-image" width="350" />
+        </a>
       </mat-card-content>
       <!-- GitHub code and demo link -->
       <mat-card-actions>
