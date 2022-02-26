@@ -37,6 +37,9 @@ module.exports = {
         7: 7,
         8: 8,
       },
+      gridTemplateColumns: {
+        auto: 'repeat(auto-fill, 27rem)',
+      },
     },
   },
   variants: {},

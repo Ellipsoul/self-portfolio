@@ -10,9 +10,9 @@
 
   /* Flexible wrapping projects display container */
   .projects-container {
-    @apply flex flex-row grow;
+    @apply sm:grid sm:grid-cols-auto flex flex-row grow flex-wrap;
     @apply items-center justify-center;
-    @apply flex-wrap gap-x-12 gap-y-12;
+    @apply gap-x-12 gap-y-12;
     @apply mt-12 mb-12 ml-3 mr-3 drop-shadow-lg;
   }
 
