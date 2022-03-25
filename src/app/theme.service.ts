@@ -68,6 +68,13 @@ export const PROJECTS:Project[] = [
     image_link: '/assets/project_images/admm.png',
   },
   {
+    name: 'Memory Game',
+    description: 'A simple React PWA memory game',
+    github_url: 'https://github.com/Ellipsoul/memory-game',
+    demo_url: 'https://memorygame.aronteh.com/',
+    image_link: '/assets/project_images/memory.png',
+  },
+  {
     name: 'Social Blogging App (Deprecated)',
     description: 'Dev.to inspired online blogging site',
     github_url: 'https://github.com/Ellipsoul/nxtfirejs',
