@@ -52,10 +52,6 @@
     @apply mx-auto absolute top-3 left-3;
   }
 
-  .resume-icon {
-    @apply transform scale-150;
-  }
-
   /* Custom colours for buttons */
   .mat-fab.mat-grayscale {
     @apply bg-gray-800 dark:bg-white;
@@ -89,7 +85,7 @@
     }
 
     .topbar-container {
-      @apply px-0 justify-around;
+      @apply px-0 justify-around w-full;
     }
   }
 }

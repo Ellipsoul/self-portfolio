@@ -53,11 +53,18 @@
   <a
     href="/assets/Aron_Teh_Resume.pdf"
     target="_blank"
-    matTooltip="Resume"
+    matTooltip="Resume/CV"
     matTooltipPosition="below"
   >
     <button mat-fab color="grayscale" ngClass="link-buttons">
-      <mat-icon color="grayscale" ngClass="resume-icon">description</mat-icon>
+      <img
+        [src]="
+          applyTheme() === 'light'
+            ? '/assets/logos/resume_logo_light.png'
+            : '/assets/logos/resume_logo_dark.png'
+        "
+        ngClass="github-icon"
+      />
     </button>
   </a>
 
