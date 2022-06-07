@@ -12,6 +12,13 @@ export interface Project {
 // Hard coded project information
 export const PROJECTS:Project[] = [
   {
+    name: 'SkyStory',
+    description: 'An elegant PWA for querying live and forecast weather',
+    github_url: 'https://github.com/Ellipsoul/weather-app',
+    demo_url: 'https://skystory.aronteh.com/',
+    image_link: '../assets/project_images/skystory.png',
+  },
+  {
     name: 'NanoNote',
     description: 'A responsive and lightweight sticky notes application',
     github_url: 'https://github.com/Ellipsoul/notetaking-app',
