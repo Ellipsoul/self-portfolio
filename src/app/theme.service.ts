@@ -33,15 +33,15 @@ export const PROJECTS:Project[] = [
     image_link: '../assets/project_images/turbofile.png',
   },
   {
-    name: 'Online Chat App',
-    description: 'A simple single-room chat application',
+    name: 'Online Chat App (Deprecated)',
+    description: 'RIP to my first ever project (and Heroku\'s free tier)',
     github_url: 'https://github.com/Ellipsoul/online-chat-app',
     demo_url: 'https://ellipsoul.github.io/online-chat-app/',
     image_link: '/assets/project_images/chatapp.png',
   },
   {
     name: 'Travelling Salesman Problem Visualiser',
-    description: 'Exactly what it sounds like. My first ever coding project',
+    description: 'Exactly what it sounds like',
     github_url: 'https://github.com/Ellipsoul/Travelling-Salesman-Visualiser',
     demo_url: 'https://ellipsoul.github.io/Travelling-Salesman-Visualiser/',
     image_link: '/assets/project_images/tsv.png',
