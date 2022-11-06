@@ -7,6 +7,7 @@ export interface Project {
   github_url: string;
   demo_url: string;
   image_link: string;
+  link_enabled: boolean;
 }
 
 // Hard coded project information
@@ -17,6 +18,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/notetaking-app',
     demo_url: 'https://nanonote.aronteh.com/',
     image_link: '../assets/project_images/nanonote.png',
+    link_enabled: true,
   },
   {
     name: 'SkyStory',
@@ -24,6 +26,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/weather-app',
     demo_url: 'https://skystory.aronteh.com/',
     image_link: '../assets/project_images/skystory.png',
+    link_enabled: true,
   },
   {
     name: 'TurboFile',
@@ -31,6 +34,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/file-sharing-app',
     demo_url: 'https://turbofile.aronteh.com/',
     image_link: '../assets/project_images/turbofile.png',
+    link_enabled: true,
   },
   {
     name: 'Online Chat App (Deprecated)',
@@ -38,6 +42,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/online-chat-app',
     demo_url: 'https://ellipsoul.github.io/online-chat-app/',
     image_link: '/assets/project_images/chatapp.png',
+    link_enabled: false,
   },
   {
     name: 'Travelling Salesman Problem Visualiser',
@@ -45,6 +50,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/Travelling-Salesman-Visualiser',
     demo_url: 'https://ellipsoul.github.io/Travelling-Salesman-Visualiser/',
     image_link: '/assets/project_images/tsv.png',
+    link_enabled: true,
   },
   {
     name: 'Quiz App',
@@ -52,6 +58,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/flutter-quizapp',
     demo_url: 'https://quizapp.aronteh.com/',
     image_link: '/assets/project_images/quizapp.png',
+    link_enabled: true,
   },
   {
     name: 'Social Links Portfolio Site',
@@ -59,6 +66,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/sebii-portfolio',
     demo_url: 'https://sebii-portfolio.vercel.app/',
     image_link: '/assets/project_images/sebii.png',
+    link_enabled: true,
   },
   {
     name: 'Tax Calculator',
@@ -66,6 +74,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/tax-calculator-pwa',
     demo_url: 'https://taxcalculator.aronteh.com/',
     image_link: '/assets/project_images/tax.png',
+    link_enabled: true,
   },
   {
     name: 'ADMM Solver',
@@ -73,6 +82,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/ADMM_Solver',
     demo_url: 'https://github.com/Ellipsoul/ADMM_Solver/blob/main/Parallel_ADMM_Aron_Teh.pdf',
     image_link: '/assets/project_images/admm.png',
+    link_enabled: true,
   },
   {
     name: 'Memory Game',
@@ -80,6 +90,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/memory-game',
     demo_url: 'https://memorygame.aronteh.com/',
     image_link: '/assets/project_images/memory.png',
+    link_enabled: true,
   },
   {
     name: 'Social Blogging App (Deprecated)',
@@ -87,6 +98,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/nxtfirejs',
     demo_url: 'https://nxtfirejs.vercel.app/',
     image_link: '/assets/project_images/nextfire.png',
+    link_enabled: false,
   },
   {
     name: 'Vorticity Streamfunction Visualiser',
@@ -94,6 +106,7 @@ export const PROJECTS:Project[] = [
     github_url: 'https://github.com/Ellipsoul/vorticity_stream_function',
     demo_url: 'https://github.com/Ellipsoul/vorticity_stream_function/blob/master/ewt17_HPC_Assignment_Report.pdf',
     image_link: '/assets/project_images/vorticity.jpg',
+    link_enabled: true,
   },
 ];
 

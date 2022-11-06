@@ -9,9 +9,16 @@
       </mat-card-header>
       <!-- Image in main content -->
       <mat-card-content>
-        <a [href]="project.demo_url" target="_blank">
+        <a
+          [href]="project.demo_url"
+          target="_blank"
+          *ngIf="project.link_enabled; else deprecated"
+        >
           <img [src]="project.image_link" ngClass="project-image" width="350" />
         </a>
+        <ng-template #deprecated>
+          <img [src]="project.image_link" ngClass="project-image" width="350" />
+        </ng-template>
       </mat-card-content>
       <!-- GitHub code and demo link -->
       <mat-card-actions>
@@ -35,6 +42,7 @@
         </a>
 
         <button
+          *ngIf="project.link_enabled"
           mat-icon-button
           ngClass="demo-icon"
           matTooltip="Project Demo"
